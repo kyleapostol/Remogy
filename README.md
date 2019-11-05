@@ -1,4 +1,4 @@
-# student_teacher_interactivity
+# Teacher to Student Remote Interactivity
 A streaming app to facilitate the interaction between a teacher
 and students using a custom interface.
 
