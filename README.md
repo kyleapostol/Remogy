@@ -4,8 +4,9 @@ and students using a custom interface.
 
 To get started:
 1) Clone this Repository into your directory
-2) Install all dependency (npm run install)
-3) Run Webpack dev server (npm run dev)
+2) Checkout branch dev2
+3) Install all dependency (npm run install)
+4) Run Webpack dev server (npm run dev)
 
 Once inside the app
 1) Enter Name(This will be a student view by default).
