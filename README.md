@@ -14,7 +14,7 @@ Once inside the app
 3) The toggle button between Teacher and Student is hidden above the question icon.
 4) The admin view will have more functionality such as creating and sending question to student view.
 5) Once the students answer the sent question(from admin view), admin will be able to see a graph about students' answers.
-5) The Admin can choose between pre-loaded questions.
+5) The Admin can choose between pre-loaded questions or recently made question.
 
 
 Technologies
