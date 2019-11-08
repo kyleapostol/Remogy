@@ -1,6 +1,4 @@
 # Teacher to Student Remote Interactivity
-A streaming app to facilitate the interaction between a teacher
-and students using a custom interface.
 
 To get started:
 1) Clone this Repository into your directory
