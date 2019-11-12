@@ -227,11 +227,16 @@ io.on('connection', (socket)=>{
 
 //listen for QQ additions
 io.on('connection', (socket)=>{
-  socket.on('QQadd', (question, studentUsername, id)=>{
+  socket.on('QQadd', (question, studentUsername, id)=>{ 
     console.log('backend QQadd socket reached. question: ', question, studentUsername, id);
     io.emit('Qsend', question, studentUsername, id);
   });
 });
+
+//http request -> endpoints
+//only emits on the backend and only .on on the front
+//emits back to the front end
+
 
 //listen for QQ deletions
 io.on('connection', (socket)=>{

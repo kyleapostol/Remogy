@@ -140,7 +140,6 @@ class App extends React.Component {
   }
 
   deleteStudentQuestion(adminQuestionID) {
-    console.log('app deleteStudentQuestion reached, adminQuestionID: ', adminQuestionID);
 
     const questionQueue = this.state.questionQueue;
     fetch(`http://localhost:3001/studentQuestion?studentQuestionID=${adminQuestionID}`, {
@@ -163,7 +162,7 @@ class App extends React.Component {
 
   socketToDeleteQQ(questionID){
     console.log(' app socketToDeleteQQ reached, questionID', questionID);
-    this.socket.emit('QQdelete', questionID);
+    this.socket.emit('QQdelete', questionID); //endpoint
   }
 
   componentDidMount(){
@@ -171,11 +170,11 @@ class App extends React.Component {
     this.getStudentQuestions();
     this.getUserLoginData();
 
-    this.socket = socketIOClient('http://0.0.0.0:3001');
+    this.socket = socketIOClient('http://0.0.0.0:3001'); //sends to backed
     this.socket.on('deleteQQ', (questionID)=>{
       console.log('app socket to delete QQ question reached, question to delete: ', questionID);
       this.deleteStudentQuestion(questionID);
-    });
+    }); //socket listener
   }
 
   render() {
