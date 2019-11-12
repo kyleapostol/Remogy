@@ -158,6 +158,7 @@ class App extends React.Component {
       } else {
           this.setState({ theme: '?darkpopout' })
       }
+      console.log("current theme: ", this.state.theme )
   }
 
   socketToDeleteQQ(questionID){
