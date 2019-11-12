@@ -140,7 +140,6 @@ class App extends React.Component {
   }
 
   deleteStudentQuestion(adminQuestionID) {
-    console.log('app deleteStudentQuestion reached, adminQuestionID: ', adminQuestionID);
 
     const questionQueue = this.state.questionQueue;
     fetch(`http://localhost:3001/studentQuestion?studentQuestionID=${adminQuestionID}`, {
